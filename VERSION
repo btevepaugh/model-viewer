@@ -1,0 +1,75 @@
+commit 7a5f745cf9b403e21f17f8c2027f343f1859e40a
+Author: sun765 <44676379+sun765@users.noreply.github.com>
+Date:   Thu Jun 25 19:44:14 2020 -0400
+
+    initial commit on including babylonjs in renderers' page #1247 (#1298)
+    
+    * installed babylon and updated package-lock
+    
+    * add babylon-viewer into rollup build options
+    
+    * create babylon's index file and ts file, nothing looks wrong
+    
+    * set up camera, scene and engine
+    
+    * babylon demo scene working!
+    
+    * update canvas size
+    
+    * installed babylon/loader, nothing looks wrong
+    
+    * working on importing models
+    
+    * model seems import correctly, but it's not shown
+    
+    * model loads correctly from different scene, two things to fix: 1. clear model when switching scene 2. model's transform  3. loading model's reject call back
+    
+    * added hdr to environment testure
+    
+    * set up config coordinate system
+    
+    * ready to make pr
+    
+    * config hdr texture and skybox
+    
+    * correct the coordinate mistake
+    
+    * update screenshots fail at filament
+    
+    * finished render babylon's goldens
+    
+    * fixed screen shot delay problem
+    
+    * excluded failed scenarios
+    
+    * fixed clip distance problem, but the skybox is gone
+    
+    * fixed wrong x direction problem
+    
+    * find a workaround for confliction between skybox and near far clip
+    
+    * refractored hdr texture
+    
+    * refractored code
+    
+    * removed all commited goldens, removed far clip
+    
+    * reset goldens to initial state
+    
+    * correct licenses
+    
+    * add comments to why not setting far clip
+    
+    * ready to pr
+    
+    * removed double raf
+    
+    * add updated goldens
+    
+    * removed all unused callbacks
+    
+    * update goldens
+    
+    * reverting accidental reversion
+    
+    Co-authored-by: Emmett Lalish <elalish@google.com>
